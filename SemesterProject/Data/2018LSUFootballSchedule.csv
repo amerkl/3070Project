@@ -1,0 +1,14 @@
+Date,Sport,Opponent,Outcome,GameCity,GameState,VenueName,LSUPoints,OpponentPoints,SpecialEvent,GameAttendance,StartTime,EndTime
+9/2/2018,Football,Miami,W,Dallas,TX,AT&T Stadium,33,17,1,68841,6:42:00 PM,10:27:00 PM
+9/8/2018,Football,Southeastern,W,Baton Rouge,LA,Tiger Stadium,31,0,0,96883,6:05:00 PM,9:08:00 PM
+9/15/2018,Football,Auburn,W,Auburn,AL,Jordan-Hare Stadium,22,21,0,86787,2:39:00 PM,6:11:00 PM
+9/22/2018,Football,Louisiana Tech,W,Baton Rouge,LA,Tiger Stadium,38,21,1,102321,6:02:00 PM,9:27:00 PM
+9/29/2018,Football,Ole Miss,W,Baton Rouge,LA,Tiger Stadium,45,16,1,100224,8:15:00 PM,11:50:00 PM
+10/6/2018,Football,Florida State,L,Gainesville,FL,Ben Hill Griffin Stadium,19,27,0,90283,3:39:00 PM,7:18:00 PM
+10/13/2018,Football,Georgia State,W,Baton Rouge,LA,Tiger Stadium,36,16,0,102231,2:39:00 PM,6:02:00 PM
+10/20/2018,Football,Mississippi State,W,Baton Rouge,LA,Tiger Stadium,19,3,1,101340,6:05:00 PM,9:12:00 PM
+11/3/2018,Football,Alabama,L,Baton Rouge,LA,Tiger Stadium,0,29,1,102321,7:10:00 PM,10:19:00 PM
+11/10/2018,Football,Arkansas,W,Fayetteville,AK,Reynolds Razerback Stadium,24,17,0,64135,6:39:00 PM,9:55:00 PM
+11/17/2018,Football,Rice,W,Baton Rouge,LA,Tiger Stadium,42,10,1,100323,6:32:00 PM,9:25:00 PM
+11/24/2018,Football,Texas A&M,L,College Station,TX,Kyle Field,72,74,0,101501,6:39:00 PM,11:32:00 PM
+1/1/2019,Football,UCF,W,Glendale,AZ,State Farm Stadium,40,32,1,57246,11:05:00 AM,2:50:00 PM

@@ -1,0 +1,35 @@
+Date,Sport,Opponent,Outcome,GameCity,GameState,VenueName,LSUPoints,OpponentPoints,SpecialEvent
+11/6/2018,Basketball,Southeastern,W,Baton Rouge,LA,Maravich Center,94,63,0
+11/9/2018,Basketball,UNC Greensboro,W,Baton Rouge,LA,Maravich Center,97,91,0
+11/13/2018,Basketball,Memphis,W,Baton Rouge,LA,Maravich Center,85,76,0
+11/16/2018,Basketball,Louisiana Tech,W,Baton Rouge,LA,Maravich Center,74,67,0
+11/22/2018,Basketball,Charleston,W,Orlando,FL,HP Field House,67,55,1
+11/23/2018,Basketball,Florida State,L,Orlando,FL,HP Field House,76,79,1
+11/25/2018,Basketball,Oklahoma State,L,Orlando,FL,HP Field House,77,90,1
+12/1/2018,Basketball,Grambling,W,Baton Rouge,LA,Maravich Center,78,57,0
+12/9/2018,Basketball,Incarnate World,W,Baton Rouge,LA,Maravich Center,91,50,0
+12/12/2018,Basketball,Houston,L,Houston,TX,Fertitta Center,76,82,0
+12/15/2018,Basketball,Saint Mary's,W,Las Vegas,NV,T-Mobile Arena,78,74,1
+12/21/2018,Basketball,Furman,W,Baton Rouge,LA,Maravich Center,75,57,0
+12/28/2018,Basketball,ULM,W,Baton Rouge,LA,Maravich Center,81,69,0
+1/8/2019,Basketball,Alabama,W,Baton Rouge,LA,Maravich Center,88,79,0
+1/12/2019,Basketball,Arkansas,W,Fayetteville,AK,Bud Walton Arena,94,88,0
+1/15/2019,Basketball,Ole Miss,W,Oxford,MS,The Pavilion,83,69,0
+1/19/2019,Basketball,South Carolina,W,Baton Rouge,LA,Maravich Center,89,67,0
+1/23/2019,Basketball,Georgia State,W,Baton Rouge,LA,Maravich Center,92,82,0
+1/26/2019,Basketball,Missouri,W,Columnia,MO,Mizzou Arena,86,80,0
+1/30/2019,Basketball,Texas A&M,W,College Station,TX,Reed Arena,72,57,0
+2/2/2019,Basketball,Arkansas,L,Baton Rouge,LA,Maravich Center,89,90,0
+2/6/2019,Basketball,Mississippi State,W,Starkville,MS,Humphrey Coliseum,92,88,0
+2/9/2019,Basketball,Auburn,W,Baton Rouge,LA,Maravich Center,83,78,0
+2/12/2019,Basketball,Kentucky,W,Lexington,KY,Rupp Arena,73,71,0
+2/20/2019,Basketball,Florida State,L,Baton Rouge,LA,Maravich Center,77,82,0
+2/23/2019,Basketball,Tennessee,W,Baton Rouge,LA,Maravich Center,82,80,0
+2/26/2019,Basketball,Texas A&M,W,Baton Rouge,LA,Maravich Center,66,55,0
+3/2/2019,Basketball,Alabama,W,Tuscaloosa,AL,Coleman Coliseum,74,69,0
+3/6/2019,Basketball,Florida State,W,Gainesville,FL,Exatech Arena at the O'Connell Center,79,78,0
+3/9/2019,Basketball,Vanderbilt,W,Baton Rouge,LA,Maravich Center,80,59,0
+3/15/2019,Basketball,Florida State,L,Nashville,TN,Bridgestone Arena,73,76,1
+3/21/2019,Basketball,Yale,W,Jacksonville,FL,VyStar Veterans Memorial Arena,79,74,1
+3/23/2019,Basketball,Maryland,W,Jacksonville,FL,VyStar Veterans Memorial Arena,69,67,1
+29-Mar,Basketball,Michigan State,L,Washington D.C.,,Capital One Arena,63,80,1

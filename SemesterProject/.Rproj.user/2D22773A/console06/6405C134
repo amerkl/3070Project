@@ -1,0 +1,292 @@
+[0m[0K]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070/SemesterProject[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070/SemesterProject[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ c[0K[?25hd[0K[6G[?25l$ cd .[0K[?25h.[0K[?25l
+[0K[?25h]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25hh[0Ke[0Kc[0Kk[0Ko[0Ku[0Kt[0K[16G[?25l$ git checkout -[0K[?25hI[0KS[0KD[0KS[0K3[0K0[0K7[0K0[0K[?25l
+[0K[?25herror: unknown switch `I'[0K[?25l
+usage: git checkout [<options>] <branch>[0K
+   or: git checkout [<options>] [<branch>] -- <file>...[0K
+[0K
+    -q, --quiet           suppress progress reporting[0K
+    -b <branch>           create and checkout a new branch[0K
+    -B <branch>           create/reset and checkout a branch[0K
+    -l                    create reflog for new branch[0K
+    --detach              detach HEAD at named commit[0K
+    -t, --track           set upstream info for new branch[0K
+    --orphan <new-branch>[0K
+                          new unparented branch[0K
+    -2, --ours            checkout our version for unmerged files[0K
+    -3, --theirs          checkout their version for unmerged files[0K
+    -f, --force           force checkout (throw away local modifications)[0K
+    -m, --merge           perform a 3-way merge with the new branch[0K
+    --overwrite-ignore    update ignored files (default)[0K
+    --conflict <style>    conflict style (merge or diff3)[0K
+    -p, --patch           select hunks interactively[0K
+    --ignore-skip-worktree-bits[0K
+                          do not limit pathspecs to sparse entries only[0K
+    --ignore-other-worktrees[0K
+                          do not check if another worktree is holding the given ref[0K
+    --recurse-submodules[=<checkout>][0K
+                          control recursive updating of submodules[0K
+    --progress            force progress reporting[0K
+[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git checkout -ISDS3070[0K[?25h[?25l$ git checkout -ISDS307[0K[?25h[?25l$ git checkout -ISDS30[0K[?25h[?25l$ git checkout -ISDS3[0K[?25h[?25l$ git checkout -ISDS[0K[?25h[?25l$ git checkout -ISD[0K[?25h[?25l$ git checkout -IS[0K[?25h[?25l$ git checkout -I[0K[?25h[?25l$ git checkout -[0K[?25hb[0K[19G[?25l$ git checkout -b [[0K[?25hI[0KS[0KD[0KS[0K[25G[?25l$ git checkout -b [ISDS 3[0K[?25h0[0K7[0K0[0K][0K[?25l
+[0K[?25hfatal: '3070]' is not a commit and a branch '[ISDS' cannot be created from it[0K[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git checkout -b [ISDS 3070][0K[?25h[?25l$ git checkout -b [ISDS 3070[0K[30G[?25h[29G[?25l$ git checkout -b [ISDS 307[0K[?25h[?25l$ git checkout -b [ISDS 30[0K[?25h[?25l$ git checkout -b [ISDS 3[0K[?25h[?25l$ git checkout -b [ISDS[0K[25G[?25h[24G[?25l$ git checkout -b [ISD[0K[?25h[?25l$ git checkout -b [IS[0K[?25h[?25l$ git checkout -b [I[0K[?25h[?25l$ git checkout -b [[0K[?25h[?25l$ git checkout -b[0K[19G[?25h[18G[?25l$ git checkout -[0K[?25h[?25l$ git checkout[0K[16G[?25h[?25l$ git checkout -[0K[?25hI[0KS[0KD[0KS[0K3[0K0[0K7[0K0[0K[?25l
+[0K[?25herror: unknown switch `I'[0K[?25l
+usage: git checkout [<options>] <branch>[0K
+   or: git checkout [<options>] [<branch>] -- <file>...[0K
+[0K
+    -q, --quiet           suppress progress reporting[0K
+    -b <branch>           create and checkout a new branch[0K
+    -B <branch>           create/reset and checkout a branch[0K
+    -l                    create reflog for new branch[0K
+    --detach              detach HEAD at named commit[0K
+    -t, --track           set upstream info for new branch[0K
+    --orphan <new-branch>[0K
+                          new unparented branch[0K
+    -2, --ours            checkout our version for unmerged files[0K
+    -3, --theirs          checkout their version for unmerged files[0K
+    -f, --force           force checkout (throw away local modifications)[0K
+    -m, --merge           perform a 3-way merge with the new branch[0K
+    --overwrite-ignore    update ignored files (default)[0K
+    --conflict <style>    conflict style (merge or diff3)[0K
+    -p, --patch           select hunks interactively[0K
+    --ignore-skip-worktree-bits[0K
+                          do not limit pathspecs to sparse entries only[0K
+    --ignore-other-worktrees[0K
+                          do not check if another worktree is holding the given ref[0K
+    --recurse-submodules[=<checkout>][0K
+                          control recursive updating of submodules[0K
+    --progress            force progress reporting[0K
+[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git checkout -ISDS3070[0K[?25h[?25l$ git checkout -ISDS307[0K[?25h[?25l$ git checkout -ISDS30[0K[?25h[?25l$ git checkout -ISDS3[0K[?25h[?25l$ git checkout -ISDS[0K[?25h[?25l$ git checkout -ISD[0K[?25h[?25l$ git checkout -IS[0K[?25h[?25l$ git checkout -[0K[?25h[?25l$ git checkout[0K[16G[?25h[15G[?25l$ git checkou[0K[?25h[?25l$ git checko[0K[?25h[?25l$ git check[0K[?25h[?25l$ git chec[0K[?25h[?25l$ git che[0K[?25h[?25l$ git ch[0K[?25h[?25l$ git c[0K[?25h[?25l$ git[0K[7G[?25h[?25l$ git b[0K[?25hr[0Ka[0Kn[0Kc[0Kh[0K[14G[?25l$ git branch -[0K[?25hI[0KS[0KD[0KS[0K3[0K0[0K7[0K0[0K[?25l
+[0K[?25herror: unknown switch `I'[0K[?25l
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged][0K
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>][0K
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...[0K
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>[0K
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>[0K
+   or: git branch [<options>] [-r | -a] [--points-at][0K
+   or: git branch [<options>] [-r | -a] [--format][0K
+[0K
+Generic options[0K
+    -v, --verbose         show hash and subject, give twice for upstream branch[0K
+    -q, --quiet           suppress informational messages[0K
+    -t, --track           set up tracking mode (see git-pull(1))[0K
+    -u, --set-upstream-to <upstream>[0K
+                          change the upstream info[0K
+    --unset-upstream      Unset the upstream info[0K
+    --color[=<when>]      use colored output[0K
+    -r, --remotes         act on remote-tracking branches[0K
+    --contains <commit>   print only branches that contain the commit[0K
+    --no-contains <commit>[0K
+                          print only branches that don't contain the commit[0K
+    --abbrev[=<n>]        use <n> digits to display SHA-1s[0K
+[0K
+Specific git-branch actions:[0K
+    -a, --all             list both remote-tracking and local branches[0K
+    -d, --delete          delete fully merged branch[0K
+    -D                    delete branch (even if not merged)[0K
+    -m, --move            move/rename a branch and its reflog[0K
+    -M                    move/rename a branch, even if target exists[0K
+    -c, --copy            copy a branch and its reflog[0K
+    -C                    copy a branch, even if target exists[0K
+    --list                list branch names[0K
+    -l, --create-reflog   create the branch's reflog[0K
+    --edit-description    edit the description for the branch[0K
+    -f, --force           force creation, move/rename, deletion[0K
+    --merged <commit>     print only branches that are merged[0K
+    --no-merged <commit>  print only branches that are not merged[0K
+    --column[=<style>]    list branches in columns[0K
+    --sort <key>          field name to sort on[0K
+    --points-at <object>  print only branches of the object[0K
+    -i, --ignore-case     sorting and filtering are case insensitive[0K
+    --format <format>     format to use for the output[0K
+[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ G[0K[?25hi[0K[?25l$ G[0K[?25h[?25l$[0K[3G[?25h[?25l$ g[0K[3G[?25h[4G[?25l$ gi[0K[?25ht[0K[7G[?25l$ git b[0K[?25hr[0Ka[0Kn[0Kh[0Kc[0K[?25l$ git branh[0K[?25h[?25l$ git bran[0K[?25hc[0Kh[0K[14G[?25l$ git branch I[0K[?25hS[0KD[0KS[0K3[0K0[0K7[0K0[0K[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ b[0K[?25hr[0K[?25l$ b[0K[?25h[?25l$[0K[3G[?25h[?25l$ g[0K[?25hi[0K[?25lt[0K[5G[?25h[6G[7G[?25l$ git b[0K[?25hr[0Ka[0Kn[0Kc[0Kh[0K[?25l
+[0K[?25h  ISDS3070[0K[?25l
+* [0;32mmaster[0m[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25hh[0Ke[0Kc[0Kk[0Ko[0Ku[0Kt[0K[16G[?25l$ git checkout i[0K[?25hs[0Kd[0Ks[0K[?25l$ git checkout isd[0K[?25h[?25l$ git checkout is[0K[?25h[?25l$ git checkout i[0K[?25h[?25l$ git checkout[0K[16G[?25h[?25l$ git checkout I[0K[?25hS[0KD[0KS[0K3[0K0[0K7[0K0[0K[?25l
+[0K[?25hSwitched to branch 'ISDS3070'[0K[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (ISDS3070)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25he[0Km[0Ke[0K[?25l$ git add SemesterProject/[0K[?25h[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (ISDS3070)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0Kt[0K[?25l$ git commit[0K[?25h[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hS[0Kt[0Ka[0Kt[0Ki[0Kc[0K[25G[?25l$ git commit -m "Static D[0K[?25ha[0Ks[0Kh[0Kb[0Ko[0Ka[0Kr[0Kd[0K[35G[?25l$ git commit -m "Static Dashboard a[0K[?25hs[0K[38G[?25l$ git commit -m "Static Dashboard as w[0K[?25he[0Kl[0K[?25ll[0K[41G[?25h[42G[43G[?25l$ git commit -m "Static Dashboard as well a[0K[?25hs[0K[46G[?25l$ git commit -m "Static Dashboard as well as H[0K[?25hT[0KM[0KL[0K[51G[?25l$ git commit -m "Static Dashboard as well as HTML a[0K[?25hn[0Kd[0K[55G[?25l$ git commit -m "Static Dashboard as well as HTML and P[0K[?25hD[0KF[0K[59G[?25l$ git commit -m "Static Dashboard as well as HTML and PDF o[0K[?25hu[0Kt[0Kp[0Ku[0Kt[0Ks[0K"[0K[?25l
+[0K[?25hwarning: could not open directory 'Application Data/': Permission denied[0K[?25l
+warning: could not open directory 'Cookies/': Permission denied[0K
+[0K[?25hwarning: could not open directory 'Documents/My Music/': Permission denied[0K[?25l
+warning: could not open directory 'Documents/My Pictures/': Permission denied[0K
+warning: could not open directory 'Documents/My Videos/': Permission denied[0K
+warning: could not open directory 'Local Settings/': Permission denied[0K
+warning: could not open directory 'My Documents/': Permission denied[0K
+warning: could not open directory 'NetHood/': Permission denied[0K
+warning: could not open directory 'PrintHood/': Permission denied[0K
+warning: could not open directory 'Recent/': Permission denied[0K
+warning: could not open directory 'SendTo/': Permission denied[0K
+warning: could not open directory 'Start Menu/': Permission denied[0K
+warning: could not open directory 'Templates/': Permission denied[0K
+On branch ISDS3070[0K
+Untracked files:[0K
+        [0;31m../../../../.anaconda/[0m[0K
+        [0;31m../../../../.atom/[0m[0K
+        [0;31m../../../../.bash_history[0m[0K
+        [0;31m../../../../.cisco/[0m[0K
+        [0;31m../../../../.condarc[0m[0K
+        [0;31m../../../../.config/[0m[0K
+        [0;31m../../../../.gimp-2.8/[0m[0K
+        [0;31m../../../../.gitconfig[0m[0K
+        [0;31m../../../../.gitignore[0m[0K
+        [0;31m../../../../.ipython/[0m[0K
+        [0;31m../../../../.jupyter/[0m[0K
+        [0;31m../../../../.matplotlib/[0m[0K
+        [0;31m../../../../.node_repl_history[0m[0K
+        [0;31m../../../../.viminfo[0m[0K
+        [0;31m../../../../3D Objects/[0m[0K
+        [0;31m../../../../Anaconda3/[0m[0K
+        [0;31m../../../../AppData/[0m[0K
+        [0;31m../../../../Contacts/[0m[0K
+        [0;31m../../../../Desktop/[0m[0K
+        [0;31m../../../Attendance4.2.19.xlsx[0m[0K
+        [0;31m../../../Court of Honor Rubric for Scribes.pdf[0m[0K
+        [0;31m../../../Default.rdp[0m[0K
+        [0;31m../../../Exam Protocols.docx[0m[0K
+        [0;31m../../../Graphic Proposal.pdf[0m[0K
+        [0;31m../../../InstagramGraphic.png[0m[0K
+        [0;31m../../AKPsi/[0m[0K
+        [0;31m../../Edit Template _ Mailchimp.html[0m[0K
+        [0;31m../../Edit Template _ Mailchimp_files/[0m[0K
+        [0;31m../../Fall 2018/[0m[0K
+        [0;31m../../Honors Thesis/[0m[0K
+        [0;31m../../ISDS3107/[0m[0K
+        [0;31m../../My Tableau Repository/[0m[0K
+        [0;31m../../Spring 2018/[0m[0K
+        [0;31m../FIN 3716/[0m[0K
+        [0;31m../Hell week.txt[0m[0K
+        [0;31mAnalysisOutline.txt[0m[0K
+        [0;31mISDS3105_fall18/[0m[0K
+        [0;31mMockWriteUp.docx[0m[0K
+        [0;31mNew Text Document.txt[0m[0K
+        [0;31mRcolor.pdf[0m[0K
+        [0;31mTo Do R Project.txt[0m[0K
+        [0;31mTopics.txt[0m[0K
+        [0;31mWeek 1/[0m[0K
+        [0;31m~$ckWriteUp.docx[0m[0K
+        [0;31m~WRL0130.tmp[0m[0K
+        [0;31m../ISDS 3115/[0m[0K
+        [0;31m../ISDS 4112/[0m[0K
+        [0;31m../ISDS 4141/[0m[0K
+        [0;31m../MKT 3401/[0m[0K
+        [0;31m../March 12-15.txt[0m[0K
+        [0;31m../Spring 2019 Grade Calculator.xlsx[0m[0K
+        [0;31m../Spring2019EndToDoList.txt[0m[0K
+        [0;31m../completed-transcript-16621164.pdf[0m[0K
+        [0;31m../desktop.ini[0m[0K
+        [0;31m../../Volleyball Promo.jpg[0m[0K
+        [0;31m../../Volleyball.jpg[0m[0K
+        [0;31m../../Winter Intersession 2018/[0m[0K
+        [0;31m../../desktop.ini[0m[0K
+        [0;31m../../../Other/[0m[0K
+        [0;31m../../../Overwatch/[0m[0K
+        [0;31m../../../Personal/[0m[0K
+        [0;31m../../../PosterGraphic.png[0m[0K
+        [0;31m../../../R/[0m[0K
+        [0;31m../../../Sublease Agreement.docx[0m[0K
+        [0;31m../../../VPMElectionQuestions.docx[0m[0K
+        [0;31m../../../Work/[0m[0K
+        [0;31m../../../desktop.ini[0m[0K
+        [0;31m../../../ricky meeting.docx[0m[0K
+        [0;31m../../../../Downloads/[0m[0K
+        [0;31m../../../../Dropbox/[0m[0K
+        [0;31m../../../../Favorites/[0m[0K
+        [0;31m../../../../HP/[0m[0K
+        [0;31m../../../../IntelGraphicsProfiles/[0m[0K
+        [0;31m../../../../Links/[0m[0K
+        [0;31m../../../../Microsoft/[0m[0K
+        [0;31m../../../../MicrosoftEdgeBackups/[0m[0K
+        [0;31m../../../../Music/[0m[0K
+        [0;31m../../../../NTUSER.DAT[0m[0K
+        [0;31m../../../../NTUSER.DAT{06a56792-8722-11e8-a592-ff2e5bb27fb7}.TM.blf[0m[0K
+        [0;31m../../../../NTUSER.DAT{06a56792-8722-11e8-a592-ff2e5bb27fb7}.TMContainer00000000000000000001.regtrans-ms[0m[0K
+        [0;31m../../../../NTUSER.DAT{06a56792-8722-11e8-a592-ff2e5bb27fb7}.TMContainer00000000000000000002.regtrans-ms[0m[0K
+        [0;31m../../../../OneDrive - Louisiana State University/[0m[0K
+        [0;31m../../../../OneDrive/[0m[0K
+        [0;31m../../../../Pictures/[0m[0K
+        [0;31m../../../../README.md[0m[0K
+        [0;31m../../../../Saved Games/[0m[0K
+        [0;31m../../../../Searches/[0m[0K
+        [0;31m../../../../Videos/[0m[0K
+        [0;31m../../../../_netrc[0m[0K[9G[?25h[?25l
+        [0;31m../../../../ntuser.dat.LOG1[0m[0K
+        [0;31m../../../../ntuser.dat.LOG2[0m[0K
+        [0;31m../../../../ntuser.ini[0m[0K
+        [0;31m../../../../venv/[0m[0K
+[0K
+nothing added to commit but untracked files present[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (ISDS3070)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git push origin I[0K[?25hS[0KD[0KS[0K[24G[23G[?25l$ git push origin ISDS3[0K[?25h0[0K7[0K0[0K[?25l
+[0K[?25h[?25lEnumerating objects: 56, done.[0K[1G[?25h[?25l
+Counting objects: 100% (56/56), done.[0K
+Delta compression using up to 4 threads.[0K
+Compressing objects:  36% (17/47)[0K[1G[?25h[?25lCompressing objects: 100% (47/47), done.[0K[2G[?25h[?25l
+Writing objects:  42% (24/56)[0K[1G[?25h[?25lWriting objects:  57% (32/56)[0K[1G[?25h[?25lWriting objects:  78% (44/56)[0K[1G[?25h[?25lWriting objects:  82% (46/56), 984.00 KiB | 468.00 KiB/s[0K[1G[?25h[?25lWriting objects:  98% (55/56), 984.00 KiB | 468.00 KiB/s[0K[1G[?25hWriting objects: 100% (56/56), 1.10 MiB | 491.00 KiB/s, done.[0K[?25l
+Total 56 (delta 4), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas: 100% (4/4), done.[0K[?25l
+[0K[?25hremote:[0K[?25l
+remote: Create a pull request for 'ISDS3070' on GitHub by visiting:[0K
+remote:      https://github.com/amerkl/MySite/pull/new/ISDS3070[0K
+remote:[0K
+To https://github.com/amerkl/MySite.git[0K
+ * [new branch]      ISDS3070 -> ISDS3070[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (ISDS3070)[0m[0K
+$[0K[3G[?25h[?25l$ ^V[0K[?25h[?25l$[0K[3G[?25h[?25l$ echo "# 3070Project" >> README.md[0K[?25h[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (ISDS3070)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git i[0K[?25hn[0Ki[0Kt[0K[?25l
+[0K[?25hInitialized empty Git repository in C:/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070/.git/[0K[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git add README.md[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in README.md.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git commit -m "first commit"[0K[?25h[?25l
+[0K[?25h[master (root-commit) a042019] first commit[0K[?25l
+ 1 file changed, 1 insertion(+)[0K
+ create mode 100644 README.md[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git remote add origin https://github.com/amerkl/3070Project.git[0K[?25h[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git push -u origin master[0K[?25h[?25l
+[0K[?25hEnumerating objects: 3, done.[0K[?25l
+Counting objects: 100% (3/3), done.[0K
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.[0K
+Total 3 (delta 0), reused 0 (delta 0)[0K
+[0K[?25hTo https://github.com/amerkl/3070Project.git[0K[?25l
+ * [new branch]      master -> master[0K
+[0K[?25hBranch 'master' set up to track remote branch 'master' from 'origin'.[0K[?25l
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25he[0Km[0K[?25l$ git add SemesterProject/[0K[?25h[?25l
+[0K[?25h

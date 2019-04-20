@@ -1,0 +1,99 @@
+---
+title: "LSU's Influence on Baton Rouge Crime Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+library(htmlwidgets)
+library(dygraphs)
+library(tidyverse)
+library(dplyr)
+```
+
+
+```{r}
+library(RSocrata)
+library(tidyverse)
+#calling package to read API and filter it
+
+token <- "NDto4CJ4JBrcMyuBGCp4NiXs5"
+#Security Token
+
+OriginalData <- read.socrata("https://data.brla.gov/resource/5rji-ddnu.json", app_token = token)
+#Converting into data frame
+
+OriginalData %>%
+  select('offense_date', 'crime', 'a_c', 'district') -> AllCrime
+#filtering API down to needed data
+
+AllCrime %>%
+  filter(str_detect(offense_date, "2018")) %>% 
+  mutate(offense_date = lubridate::ymd(offense_date)) -> BRCrime
+
+
+
+#LSUFootball Upload
+LSUFootball <- read_csv(here::here("Data","2018LSUFootballSchedule.csv"),
+                        col_types = cols(Date = col_date(format = "%m/%d/%Y"), 
+                                         EndTime = col_skip(), GameAttendance = col_number(), 
+                                         LSUPoints = col_number(), OpponentPoints = col_number(), 
+                                         SpecialEvent = col_logical(), StartTime = col_skip()))
+#mean(LSUFootball$LSUPoints)
+#meanfunction
+full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData
+```
+
+
+Row {data-width=600}
+-----------------------------------------------------------------------
+
+### Crime per Day in 2018
+
+```{r}
+ggplot(data = JoinedData, mapping=aes(x=offense_date)) +
+  geom_bar(color = 'steelblue') +
+  theme(axis.text.x = element_text(angle = 90))+
+  ggtitle("Crime Count per Day for 2018")+
+  xlab("Crime Date")+
+  ylab("Crimes Reported")
+```
+
+### Attempted Crimes vs Committeed Crimes
+
+```{r}
+ggplot(data=subset(JoinedData, !is.na(a_c))) +
+  geom_bar(mapping = aes(x = crime, fill = a_c)) +
+  ggtitle("Total Crimes for 2018", "Separated by Committed and Attempted") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  xlab("Type of Crime Reported")+
+  ylab("Total Crimes")
+```
+
+Row {data-width=400}
+-----------------------------------------------------------------------
+
+### Opponent Influence
+```{r}
+ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x=Opponent, fill=Outcome)) +
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 45))+
+  ggtitle("Crimes Committed by LSU Opponents")+
+  xlab("Opponent University")+
+  ylab("Total Crimes")
+```
+
+### Audience influence on Outcome
+
+```{r}
+ggplot(data = LSUFootball) +
+  geom_point(mapping = aes(x = GameAttendance, y = LSUPoints, color = Outcome, size = 9)) +
+  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  xlab("Audience Size")+
+  ylab("LSU Points Scored")
+```
+

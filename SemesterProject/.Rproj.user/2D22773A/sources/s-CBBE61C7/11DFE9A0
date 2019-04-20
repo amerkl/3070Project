@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555788975034.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "11DFE9A0",
+    "lastKnownWriteTime" : 1555792697,
+    "last_content_update" : 1555792698002,
+    "path" : "~/LSU/Spring 2019/ISDS 3070/SemesterProject/03Rmd/BRCrimeDashboard.Rmd",
+    "project_path" : "03Rmd/BRCrimeDashboard.Rmd",
+    "properties" : {
+        "cursorPosition" : "97,0",
+        "last_setup_crc32" : "",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
