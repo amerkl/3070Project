@@ -13,6 +13,7 @@ library(htmlwidgets)
 library(dygraphs)
 library(tidyverse)
 library(dplyr)
+library(plotly)
 ```
 
 
