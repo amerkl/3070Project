@@ -543,4 +543,93 @@ $[0K[3G[?25h[0m[0K]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070/S
 [0K[?25h]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070[?25l
 [0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
 $[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25h[?25l$ git add SemesterProject/[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rhistory.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/pcs/files-pane.pper.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/4C4131DF.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/767E9C02.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/DC094927.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/INDEX.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/csetup_chunk/000002.csv.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/shared/notebooks/paths.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0K[6G[5G[?25l$ git[0K[?25h[7G[?25l$ git o[0K[?25h[?25l$ git[0K[7G[?25h[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25h[?25lm[0K[15G[?25h[16G[17G[?25l$ git commit -m "[0K[?25hR[0Ke[0Ka[0Kd[0K[23G[?25l$ git commit -m "Read m[0K[?25he[0K[26G[?25l$ git commit -m "Read me a[0K[?25hn[0Kd[0K[30G[29G[?25l$ git commit -m "Read me an[0K[?25h[?25l$ git commit -m "Read me a[0K[?25h[?25l$ git commit -m "Read me[0K[27G[?25h[26G[25G[?25l$ git commit -m "Read m[0K[?25h[?25l$ git commit -m "Read[0K[23G[?25h[22G[?25l$ git commit -m "Rea[0K[?25h[?25l$ git commit -m "Re[0K[?25h[?25l$ git commit -m "R[0K[?25hE[0KA[0KD[0KM[0KE[0K[25G[24G[25G[?25l$ git commit -m "README a[0K[?25hn[0Kd[0K[29G[?25l$ git commit -m "README and a[0K[?25hn[0Ka[0Kl[0Ky[0Ks[0Ki[0Ks[0K[38G[?25l$ git commit -m "README and analysis s[0K[?25hc[0Kr[0Ki[0Kp[0Kt[0Ks[0K[46G[?25l$ git commit -m "README and analysis scripts u[0K[?25hp[0Kd[0Ka[0Kt[0Ke[0K"[0K[52G[?25l$ git commit -m "README and analysis scripts updates"[0K[53G[?25h[?25l
+[0K[?25h[master 4e2db5e] README and analysis scripts updates[0K[?25l
+ 27 files changed, 46222 insertions(+), 416 deletions(-)[0K
+ rewrite SemesterProject/.Rproj.user/2D22773A/console06/INDEX001 (100%)[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/11DFE9A0[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/11DFE9A0-contents[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/8FF5A291[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/8FF5A291-contents[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/D4DE21E2[0K
+ delete mode 100644 SemesterProject/.Rproj.user/2D22773A/sources/s-CBBE61C7/lock_file[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/c2cctoxbyo63d/00000e.png (99%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/cati5tl32owk8/000003.png (95%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/chunks.json (80%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/cj3160ffj01f5/000004.png (99%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/ck4zhavntwp39/000003.png (99%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/csetup_chunk/000002.csv (98%)[0K
+ rewrite SemesterProject/01RScripts/AnalysisScripts.R (68%)[0K
+ rename SemesterProject/{.Rproj.user/2D22773A/sources/s-CBBE61C7/D4DE21E2-contents => 01RScripts/ScriptTestAttempts.R} (56%)[0K
+ create mode 100644 SemesterProject/Data/ANALYSISBaton_Rouge_Crime_Incidents.csv[0K
+ create mode 100644 SemesterProject/README.html[0K
+ rewrite SemesterProject/README.md (100%)[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Ki[0Kn[0K[?25l$ git push orii[0K[?25h[?25l$ git push ori[0K[?25hg[0Ki[0Kn[0K[19G[?25l$ git push origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
+[0K[?25hEnumerating objects: 82, done.[0K[?25l
+Counting objects: 100% (82/82), done.[0K
+Delta compression using up to 4 threads.[0K[1G[?25h[?25l
+Compressing objects:  82% (32/39)[0K[1G[?25hCompressing objects: 100% (39/39), done.[0K[?25l
+Writing objects:  93% (40/43)[0K[1G[?25h[?25lWriting objects:  95% (41/43)[0K[1G[?25hWriting objects: 100% (43/43), 371.24 KiB | 3.75 MiB/s, done.[0K[?25l
+Total 43 (delta 16), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas:  50% (8/16)[0K[41G[1Gremote: Resolving deltas: 100% (16/16), completed with 16 local objects.[0K[?25l
+[0K[?25hTo https://github.com/amerkl/3070Project.git[0K[?25l
+   f2dc041..4e2db5e  master -> master[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25ht[0K[6G[5G[?25l$ gti[0K[?25ht[0K[8G[7G[?25l$ gti[0K[?25h[?25l$ gt[0K[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[12G[?25l$ git pull o[0K[?25hr[0Ki[0Ki[0Kn[0K[?25l$ git pull orii[0K[?25h[?25l$ git pull ori[0K[?25hg[0Ki[0K[?25ln[0K[17G[?25h[18G[19G[?25l$ git pull origin m[0K[?25ha[0Ks[0Kt[0Ke[0K[?25lr[0K[24G[?25h[25G[?25l
+[0K[?25hremote: Enumerating objects: 15, done.[0K[?25l
+remote: Counting objects: 100% (15/15), done.[0K
+remote: Compressing objects: 100% (12/12)[0K[1G[?25hremote: Compressing objects: 100% (12/12), done.[0K[?25l
+remote: Total 12 (delta 3), reused 0 (delta 0), pack-reused 0[0K
+[0K[?25h[?25lUnpacking objects:   8% (1/12)[0K[1G[?25h[?25lUnpacking objects:  16% (2/12)[0K[1G[?25h[?25lUnpacking objects:  25% (3/12)[0K[1G[?25h[?25lUnpacking objects:  33% (4/12)[0K[1G[?25h[?25lUnpacking objects:  41% (5/12)[0K[1G[?25h[?25lUnpacking objects:  50% (6/12)[0K[1G[?25h[?25lUnpacking objects:  58% (7/12)[0K[1G[?25h[?25lUnpacking objects:  66% (8/12)[0K[1G[?25h[?25lUnpacking objects:  75% (9/12)[0K[1G[?25h[?25lUnpacking objects:  83% (10/12)[0K[1G[?25h[?25lUnpacking objects:  91% (11/12)[0K[1G[?25hUnpacking objects: 100% (12/12), done.[0K[?25l
+[0K[?25hFrom https://github.com/amerkl/3070Project[0K[?25l
+ * branch            master     -> FETCH_HEAD[0K
+   4e2db5e..14596e4  master     -> origin/master[0K
+[0K[?25hUpdating 4e2db5e..14596e4[0K[?25l
+Fast-forward[0K
+[0K[?25h README.md                   |   7 [0;32m++[0m[0K[?25l
+ SemesterProject/README.html | 237 [0;31m--------------------------------------------[0m[0K
+ SemesterProject/README.md   |   8 [0;31m--[0m[0K
+ 3 files changed, 7 insertions(+), 245 deletions(-)[0K
+ delete mode 100644 SemesterProject/README.html[0K
+ delete mode 100644 SemesterProject/README.md[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[12G[?25l$ git pull o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git pull origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
+[0K[?25hremote: Enumerating objects: 5, done.[0K[?25l
+remote: Counting objects: 100% (5/5), done.[0K
+remote: Compressing objects: 100% (3/3), done.[0K
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0[0K
+[0K[?25h[?25lUnpacking objects:  33% (1/3)[0K[1G[?25h[?25lUnpacking objects:  66% (2/3)[0K[1G[?25hUnpacking objects: 100% (3/3), done.[0K[?25l
+[0K[?25hFrom https://github.com/amerkl/3070Project[0K[?25l
+ * branch            master     -> FETCH_HEAD[0K
+   14596e4..69e2b29  master     -> origin/master[0K
+[0K[?25hUpdating 14596e4..69e2b29[0K[?25l
+Fast-forward[0K
+ SemesterProject/LSUCrimeDashboard/app.R | 11 [0;31m-----------[0m[0K
+ 1 file changed, 11 deletions(-)[0K
+ delete mode 100644 SemesterProject/LSUCrimeDashboard/app.R[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25h[?25l$ git add SemesterProject/[0K[?25h[?25l
 [0K[?25h
