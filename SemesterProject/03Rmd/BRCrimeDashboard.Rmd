@@ -58,9 +58,9 @@ Row {data-width=600}
 ```{r}
 ggplot(data = JoinedData, mapping=aes(x=offense_date)) +
   geom_bar(color = 'steelblue') +
-  theme(axis.text.x = element_text(angle = 90))+
-  ggtitle("Crime Count per Day for 2018")+
-  xlab("Crime Date")+
+  theme(axis.text.x = element_text(angle = 90)) +
+  ggtitle("Crime Count per Day for 2018") +
+  xlab("Crime Date") +
   ylab("Crimes Reported")
 ```
 

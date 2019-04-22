@@ -1,5 +1,10 @@
-"0","library(plotly)
-"
+"0","library(flexdashboard)"
+"0","library(shiny)"
+"0","library(htmlwidgets)"
+"0","library(dygraphs)"
+"0","library(tidyverse)"
+"0","library(dplyr)"
+"0","library(plotly)"
 "2","
 Attaching package: ‘plotly’
 
