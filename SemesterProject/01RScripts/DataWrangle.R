@@ -26,6 +26,7 @@ LSUFootball <- read_csv(here::here("Data","2018LSUFootballSchedule.csv"),
                                          EndTime = col_skip(), GameAttendance = col_number(), 
                                          LSUPoints = col_number(), OpponentPoints = col_number(), 
                                          SpecialEvent = col_logical(), StartTime = col_skip()))
+
 #mean(LSUFootball$LSUPoints)
 #meanfunction
 full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData

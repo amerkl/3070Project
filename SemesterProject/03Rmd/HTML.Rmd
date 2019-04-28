@@ -22,7 +22,8 @@ In beginning the analysis, we wanted to see the amount of crimes committed per d
 
 ```{r, echo = FALSE}
 ggplot(data = JoinedData, mapping=aes(x=offense_date)) +
-  geom_bar(color = 'steelblue') +
+  geom_bar(color = 'purple') +
+  geom_hline(yintercept = 120, color = 'yellow') +
   xlab("Reported Date") +
   ylab("Total Crimes")+
   ggtitle("Crime Count per Day for 2018")
