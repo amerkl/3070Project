@@ -7,6 +7,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(DT)
 library(flexdashboard)
 library(shiny)
 library(htmlwidgets)
@@ -52,8 +53,7 @@ full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData
 
 Row {data-width=600}
 -----------------------------------------------------------------------
-
-### Crime per Day in 2018
+### Daily Crime Counts Table
 
 ```{r}
     count(JoinedData, offense_date, Sport) %>%  
@@ -62,9 +62,12 @@ Row {data-width=600}
       geom_line(color = 'purple', size = 1)+ 
       ggtitle("Crimes for 2018", "Count of Crimes per Day in 2018") +
       xlab("Date Committed") +
-      ylab("Crime count") +
-      geom_hline(yintercept = 125, color = 'gold', size = 1)
+      ylab("Total Crimes") +
+      geom_hline(yintercept = 125, color = 'gold', size = 1) -> DailyCrimefor2018
+ggplotly(DailyCrimefor2018)
+
 ```
+
 
 ### Total Crimes Committed for LSU Opponnents
 
@@ -75,7 +78,9 @@ ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Oppo
   ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
   geom_hline(yintercept = 125, color = 'gold', size = 1)+
   xlab("Opponent Universities")+
-  ylab("Total Crime")
+  ylab("Total Crime") -> CrimeByOpponent
+
+ggplotly(CrimeByOpponent)
 ```
 
 Row {data-width=400}
@@ -83,6 +88,7 @@ Row {data-width=400}
 
 ### Audience Influence on Outcome
 ```{r}
+
 ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   geom_point(size = 4, position = "jitter",color = 'purple') +
   ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
@@ -92,7 +98,9 @@ ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   ylab("LSU Points Scored")+
   scale_x_continuous(labels = scales::comma)+
   theme(axis.text.x = element_text(angle = 90))+
-  facet_wrap(~Outcome)
+  facet_wrap(~Outcome) -> AudienceOutcome
+  
+ggplotly(AudienceOutcome)
 ```
 
 ### Gameday vs Non Gameday Crime Counts
@@ -107,6 +115,7 @@ ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   ggtitle("Daily Crime Count by Type", "Faceted by LSU vs NonLSU Dates") +
   xlab("Crime Type") +
   ylab("Crime Rate")+
-  facet_wrap(~Sport)
+  facet_wrap(~Sport) -> GamedayvsNonGameday
+ggplotly(GamedayvsNonGameday)
 ```
 

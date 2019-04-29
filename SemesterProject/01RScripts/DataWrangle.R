@@ -17,7 +17,7 @@ OriginalData %>%
 AllCrime %>%
   filter(str_detect(offense_date, "2018")) %>% 
   mutate(offense_date = lubridate::ymd(offense_date)) -> BRCrime
-
+#filtering data down to 2018 only and changing offense date into usable format
 
 
 #LSUFootball Upload
@@ -34,4 +34,5 @@ full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData
 #cleaning NAs for Gameday Graphs
 JoinedData$Sport[which(is.na(JoinedData$Sport))] <- "Non Gameday"
 
+#cleaning unknowns for crime graphs for crimes with purposefully unreported locations
 JoinedData$district[which(is.na(JoinedData$district))] <- "Unknown"

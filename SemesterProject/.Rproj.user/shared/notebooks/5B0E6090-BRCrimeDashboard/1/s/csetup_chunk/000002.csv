@@ -1,26 +1,11 @@
-"0","library(flexdashboard)"
-"0","library(shiny)"
-"0","library(htmlwidgets)"
-"0","library(dygraphs)"
-"0","library(tidyverse)"
-"0","library(dplyr)"
-"0","library(plotly)"
+"0","library(DT)
+"
 "2","
-Attaching package: ‘plotly’
+Attaching package: ‘DT’
 
 "
-"2","The following object is masked from ‘package:ggplot2’:
+"2","The following objects are masked from ‘package:shiny’:
 
-    last_plot
-
-"
-"2","The following object is masked from ‘package:stats’:
-
-    filter
-
-"
-"2","The following object is masked from ‘package:graphics’:
-
-    layout
+    dataTableOutput, renderDataTable
 
 "
