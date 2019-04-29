@@ -51,6 +51,7 @@ full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData
 ```
 
 
+
 Row {data-width=600}
 -----------------------------------------------------------------------
 ### Daily Crime Counts Table
@@ -65,6 +66,7 @@ Row {data-width=600}
       ylab("Total Crimes") +
       geom_hline(yintercept = 125, color = 'gold', size = 1) -> DailyCrimefor2018
 ggplotly(DailyCrimefor2018)
+  
 
 ```
 
@@ -89,18 +91,13 @@ Row {data-width=400}
 ### Audience Influence on Outcome
 ```{r}
 
-ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
-  geom_point(size = 4, position = "jitter",color = 'purple') +
-  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
-  geom_hline(yintercept = 33, color = 'gold', size = 1)+
-  geom_vline(xintercept = 90340, color = 'gold', size = 1)+
-  xlab("Attendance")+
-  ylab("LSU Points Scored")+
-  scale_x_continuous(labels = scales::comma)+
-  theme(axis.text.x = element_text(angle = 90))+
-  facet_wrap(~Outcome) -> AudienceOutcome
+ggplot(data=JoinedData, mapping = aes(x=district, fill = district)) +
+  geom_bar()+
+  ggtitle("Total Crimes by District for 2018")+
+  xlab("District Number")+
+  ylab("Total Crime") -> DistrictCrimes
   
-ggplotly(AudienceOutcome)
+ggplotly(DistrictCrimes)
 ```
 
 ### Gameday vs Non Gameday Crime Counts
