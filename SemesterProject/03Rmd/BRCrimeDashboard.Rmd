@@ -66,7 +66,6 @@ Row {data-width=600}
       ylab("Total Crimes") +
       geom_hline(yintercept = 125, color = 'gold', size = 1) -> DailyCrimefor2018
 ggplotly(DailyCrimefor2018)
-  
 
 ```
 
@@ -76,7 +75,7 @@ ggplotly(DailyCrimefor2018)
 ```{r}
 ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Opponent, offense_date), fill=Outcome)) +
   geom_bar()+
-  theme(axis.text.x = element_text(angle = 45))+
+  theme(axis.text.x = element_text(angle = 45, hjust = +1))+
   ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
   geom_hline(yintercept = 125, color = 'gold', size = 1)+
   xlab("Opponent Universities")+

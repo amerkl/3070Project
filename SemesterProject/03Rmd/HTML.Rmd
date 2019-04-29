@@ -59,7 +59,7 @@ As detailed in the graph below we see the count of crimes committed by the oppon
 ```{r, echo = FALSE}
 ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Opponent, offense_date), fill=Outcome)) +
   geom_bar()+
-  theme(axis.text.x = element_text(angle = 45))+
+  theme(axis.text.x = element_text(angle = 45, hjust = +1))+
   ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
   geom_hline(yintercept = 125, color = 'gold', size = 1)+
   xlab("Opponent Universities")+
@@ -71,7 +71,7 @@ Looking further into what causes the previous factors mentioned to influence cri
 ```{r, echo=FALSE}
 ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   geom_point(size = 4, position = "jitter",color = 'purple') +
-  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  ggtitle("LSU Points Scored by Game Attendance", "Faceted by Outcome")+
   geom_hline(yintercept = 33, color = 'gold', size = 1)+
   geom_vline(xintercept = 90340, color = 'gold', size = 1)+
   xlab("Attendance")+

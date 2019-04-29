@@ -4,7 +4,7 @@ library(ggplot2)
 #COMPLETED SCRIPTS
 ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Opponent, offense_date), fill=Outcome)) +
   geom_bar()+
-  theme(axis.text.x = element_text(angle = 45))+
+  theme(axis.text.x = element_text(angle = 45, hjust = +1))+
   ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
   geom_hline(yintercept = 125, color = 'gold', size = 1)+
   xlab("Opponent Universities")+
@@ -14,10 +14,11 @@ ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Oppo
 count(JoinedData, offense_date, Sport) %>%  
   group_by(Sport) %>% 
   ggplot(mapping = aes(x = offense_date, y = n)) +
-  geom_line(color = 'deepskyblue', size = 1)+ 
-  ggtitle("Crime Commited Crimes for 2018", "Count committed crimes per Day") +
+  geom_line(color = 'purple', size = 1)+ 
+  ggtitle("Crimes for 2018", "Count of Crimes per Day in 2018") +
   xlab("Date Committed") +
-  ylab("Crime Rate")
+  ylab("Crime count") +
+  geom_hline(yintercept = 125, color = 'gold', size = 1)
 #Line Chart for Daily Crimes Committed
 
 
@@ -32,7 +33,7 @@ ggplot(data=subset(JoinedData, !is.na(Outcome)), mapping = aes(x= crime, fill=Ou
 
 ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   geom_point(size = 4, position = "jitter",color = 'purple') +
-  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  ggtitle("LSU Points Scored by Game Attendance", "Faceted by Outcome")+
   geom_hline(yintercept = 33, color = 'gold', size = 1)+
   geom_vline(xintercept = 90340, color = 'gold', size =1)+
   xlab("Attendance")+
@@ -67,6 +68,12 @@ count(JoinedData, offense_date, Sport, crime) %>%
   xlab("Crime Type") +
   ylab("Crime Rate")+
   facet_wrap(~Sport)
+
+ggplot(data=JoinedData, mapping = aes(x=district, fill = district)) +
+  geom_bar()+
+  ggtitle("Total Crimes by District for 2018")+
+  xlab("District Number")+
+  ylab("Total Crime")
 
 #Unused, but useful scripts ------------------------------------------------------------------------------------------------------
 
