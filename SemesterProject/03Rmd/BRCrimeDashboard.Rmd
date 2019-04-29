@@ -56,45 +56,57 @@ Row {data-width=600}
 ### Crime per Day in 2018
 
 ```{r}
-ggplot(data = JoinedData, mapping=aes(x=offense_date)) +
-  geom_bar(color = 'steelblue') +
-  theme(axis.text.x = element_text(angle = 90)) +
-  ggtitle("Crime Count per Day for 2018") +
-  xlab("Crime Date") +
-  ylab("Crimes Reported")
+    count(JoinedData, offense_date, Sport) %>%  
+      group_by(Sport) %>% 
+      ggplot(mapping = aes(x = offense_date, y = n)) +
+      geom_line(color = 'purple', size = 1)+ 
+      ggtitle("Crimes for 2018", "Count of Crimes per Day in 2018") +
+      xlab("Date Committed") +
+      ylab("Crime count") +
+      geom_hline(yintercept = 125, color = 'gold', size = 1)
 ```
 
-### Attempted Crimes vs Committeed Crimes
+### Total Crimes Committed for LSU Opponnents
 
 ```{r}
-ggplot(data=subset(JoinedData, !is.na(a_c))) +
-  geom_bar(mapping = aes(x = crime, fill = a_c)) +
-  ggtitle("Total Crimes for 2018", "Separated by Committed and Attempted") +
-  theme(axis.text.x = element_text(angle = 90)) +
-  xlab("Type of Crime Reported")+
-  ylab("Total Crimes")
+ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Opponent, offense_date), fill=Outcome)) +
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 45))+
+  ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
+  geom_hline(yintercept = 125, color = 'gold', size = 1)+
+  xlab("Opponent Universities")+
+  ylab("Total Crime")
 ```
 
 Row {data-width=400}
 -----------------------------------------------------------------------
 
-### Opponent Influence
+### Audience Influence on Outcome
 ```{r}
-ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x=Opponent, fill=Outcome)) +
-  geom_bar()+
-  theme(axis.text.x = element_text(angle = 45))+
-  ggtitle("Crimes Committed by LSU Opponents")+
-  xlab("Opponent University")+
-  ylab("Total Crimes")
+ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
+  geom_point(size = 4, position = "jitter",color = 'purple') +
+  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  geom_hline(yintercept = 33, color = 'gold', size = 1)+
+  geom_vline(xintercept = 90340, color = 'gold', size = 1)+
+  xlab("Attendance")+
+  ylab("LSU Points Scored")+
+  scale_x_continuous(labels = scales::comma)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~Outcome)
 ```
 
-### Audience influence on Outcome
+### Gameday vs Non Gameday Crime Counts
 
 ```{r}
-ggplot(data = LSUFootball) +
-  geom_point(mapping = aes(x = GameAttendance, y = LSUPoints, color = Outcome, size = 9)) +
-  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
-  xlab("Audience Size")+
-  ylab("LSU Points Scored")
+  count(JoinedData, offense_date, Sport, crime) %>%  
+  group_by(Sport, crime) %>% 
+  summarise(AverageRate = mean(n)) %>% 
+  ggplot(mapping = aes(x = crime, y = AverageRate)) +
+  geom_col(fill = 'purple')+
+  theme(axis.text.x = element_text(angle = 90))+
+  ggtitle("Daily Crime Count by Type", "Faceted by LSU vs NonLSU Dates") +
+  xlab("Crime Type") +
+  ylab("Crime Rate")+
+  facet_wrap(~Sport)
 ```
 

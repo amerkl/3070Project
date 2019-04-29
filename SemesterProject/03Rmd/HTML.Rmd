@@ -15,67 +15,89 @@ source(here("01RScripts","DataWrangle.R"))
 
 
 #Introduction to Event Analysis
-The analysis conducted focuses on how LSU events have affected crime rates in the greater Baton Rouge area for 2018. In order to complete this, the analysis covers the LSU Football schedule for the 2018 season, and analyzes how the factors of these games, such as Attendance, Game Outcome, LSU Points Scored, Opponent, and Game Location, affect crime rates, types, and districts within Baton Rouge.
+The analysis conducted focuses on if and how LSU events have affected crime rates in the greater Baton Rouge area for 2018. In order to complete this, the analysis covers the LSU Football schedule for the 2018 season, and analyzes how the factors of these games, such as Attendance, Game Outcome, LSU Points Scored, Opponent, and Game Location, affect crime rates, types, and districts within Baton Rouge.
 
 #Where We Are Now
-In beginning the analysis, we wanted to see the amount of crimes committed per day in the Baton Rouge area. As seen in the chart below, rates are relatively stable around 120 crimes per day. Also after calculating the standard deviation of around 0.06, we can derive that there is minimal variation from month to month and our peak crimes occur in June with 4108 reported crimes and a trough in December with 3349 reported crimes.
+The analysis begins by looking at the amount of crimes committed per day in the Baton Rouge area. As seen in the chart below, rates are relatively stable around it's average of 125 crimes per day. Through further analysis and calculations, I found that the standard deviation of around 0.06, and from which we derive that there is minimal variation from month to month. Additionally we see our peak crimes occur in June with 4108 reported crimes in 30 days, and a trough in December with 3349 reported crimes in 31 days. The line chart of Crimes committed per day for 2018 is listed below.
 
 ```{r, echo = FALSE}
-ggplot(data = JoinedData, mapping=aes(x=offense_date)) +
-  geom_bar(color = 'purple') +
-  geom_hline(yintercept = 120, color = 'yellow') +
-  xlab("Reported Date") +
-  ylab("Total Crimes")+
-  ggtitle("Crime Count per Day for 2018")
-
+    count(JoinedData, offense_date, Sport) %>%  
+      group_by(Sport) %>% 
+      ggplot(mapping = aes(x = offense_date, y = n)) +
+      geom_line(color = 'purple', size = 1)+ 
+      ggtitle("Crimes for 2018", "Count of Crimes per Day in 2018") +
+      xlab("Date Committed") +
+      ylab("Crime count") +
+      geom_hline(yintercept = 125, color = 'gold', size = 1)
 ```
 
 #Crime Rates Per District
-Diving further into the basics of Baton Rouge, we see below total crime by crime type divided by district. From this graph, in a much more organized way, we are able to derive not only where the crimes are located, but which crimes are more prevalent in certain areas. To define that further we see that one of the largest columns is Theft, and the proportion of this crime is fairly evenly dispersed between district 1, 2, and 3, showing that it is a crime we need to focus more on all around Baton Rouge. This is not the case in the Vehicle Burglary category because we can see that the majority of that columns total is filled up by district 2 which gives insight to authorities to pay closer attention to that crime in this area.
+Diving further into the basics of Baton Rouge, we see below total crime by crime type divided by district. From this graph, in a much more organized way, we are able to derive not only where the crimes are located, but which crimes are more prevalent in certain areas. To define that further, we see that one of the largest columns is Theft, and the proportion of this crime is fairly evenly dispersed between district 1, 2, and 3, showing that it is a crime we need to focus more on all around Baton Rouge. This is not the case in the Vehicle Burglary category because we can see that the majority of that columns total is filled up by district 2 which gives insight to authorities to pay closer attention to that crime in this area.
 ```{r, echo = FALSE}
 ggplot(data=subset(JoinedData, !is.na(district)), mapping = aes(x=crime, fill=district)) +
   geom_bar() +
   theme(axis.text.x = element_text(angle = 90)) +
-  ggtitle("Total Crime by Type per District","Colored by Outcome")+
-  xlab("Total Crime")+
-  ylab("Type of Crime")
+  ggtitle("Total Crime in 2018 by Type","Colored by District")+
+  xlab("Type of Crime")+
+  ylab("Total Crime")
 ```
 
 #Crime Rates by LSU Outcome
-Considering the personal investment most people have with their sports team, it's not too far off to say that some of their actions may be affected based on the outcome of a game. The chart below shows how crimes numbers and types of crimes are affect based on the outcome of LSU games. As you can see, crimes actually increase based on if LSU wins, more specificially in the other and Theft categories. This shows how LSU events can influence individuals to potentially act out of their normal attitudes.
+Considering the personal investment most people have with their sports team, it's not far off to say that some of their actions may be affected based on the outcome of a game. The chart below shows how crimes numbers and types of crimes are affected based on the outcome of LSU games. As you can see, crimes actually increase based on if LSU wins, more specificially in the other and Theft categories. This shows how LSU events can influence individuals to potentially act out of their normal attitudes.
 
 ```{r, echo=FALSE}
-pallette <- c('#7F00FF','FFFF00')
-ggplot(data=subset(JoinedData, !is.na(Outcome)), mapping = aes(x=crime, fill=Outcome)) +
+ggplot(data=subset(JoinedData, !is.na(Outcome)), mapping = aes(x= crime, fill=Outcome)) +
   geom_bar() +
-  ggtitle("Crime Rates per Type","Colored by LSU Outcome") +
-  xlab("Crime Type") +
-  ylab("Total Crime") +
-  theme(axis.text.x = element_text(angle = 90)) -> co
-
-  co+facet_grid(vars(Outcome))
+  theme(axis.text.x = element_text(angle = 90))+
+  ggtitle("Crime Layout for LSU Game Days", "Colored by Game Outcome")+
+  xlab("Crime Type")+
+  ylab("Total Crime")
 ```
 
 #Opponent's Effect on Crime Rates
-As detailed in the graph below we see the count of crimes committed by the opponent LSU was facing at the time, as well as the outcome of the game that day. What we can derive from this is opponents have little effect on the amount of crimes committed in a given day, with the exception of the peak crime date for the Louisiana Tech game, I guess that’s what you get when you put Louisiana up against Louisiana.
+As detailed in the graph below we see the count of crimes committed by the opponent LSU was facing at the time with a color application for the outcome of that game. What we can derive from this is opponents have little effect on the amount of crimes committed in a given day, with the exception of the peak crime date for the Louisiana Tech game, which is to be expected when you put Louisiana up against Louisiana.
 ```{r, echo = FALSE}
-ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x=Opponent, fill=Outcome)) +
+ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Opponent, offense_date), fill=Outcome)) +
   geom_bar()+
   theme(axis.text.x = element_text(angle = 45))+
-  ggtitle("Count of Crimes by LSU Opponents")+
-  xlab("Oppoent School") +
+  ggtitle("Count of Crimes by LSU Opponents", "In Order of LSU 2018 Season")+
+  geom_hline(yintercept = 125, color = 'gold', size = 1)+
+  xlab("Opponent Universities")+
   ylab("Total Crime")
 ```
 
 #Game Attendance on Outcome
 Looking further into what causes the previous factors mentioned to influence crime in Baton Rouge, the next analysis point covers how Game Attendance affect the amount of points LSU scores thereby affecting their probability of winning. As you can see in the graph listed below, losses usually occur with larger audiences, with points scored having little effect on the outcome of the event. Relying on common sense mostly, one can estimate that chances are the losses are linked more toward level of difficulty of the opponent, which usually leads to higher turn out of fans.
 ```{r, echo=FALSE}
-ggplot(data = LSUFootball) +
-  geom_point(mapping = aes(x = GameAttendance, y = LSUPoints, color = Outcome, size = 9)) +
-  ggtitle("Points Scored by Game Attendance", "Colored by Game Outcome") +
-  xlab("Points Scored") +
-  ylab("Event Attendance")
+ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
+  geom_point(size = 4, position = "jitter",color = 'purple') +
+  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  geom_hline(yintercept = 33, color = 'gold', size = 1)+
+  geom_vline(xintercept = 90340, color = 'gold', size = 1)+
+  xlab("Attendance")+
+  ylab("LSU Points Scored")+
+  scale_x_continuous(labels = scales::comma)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~Outcome)
+```
+
+#The True LSU Impact
+We see that while LSU events don't have an affect on the daily crime rates themselves, we do see increases in individual crime type rates for those dates. As you can see in the graph above, Assault crimes as well as vehicle increase by 66% of the daily average. Using inferential analysis we can estimate how the culture of a “Gameday” can affect Assaults reports, as well as with the large amounts of people being in Tiger Stadium, and nowhere near their cars, how vehicle burglaries can increase. In addition, we also see that reported Narcotics crime rates go down 54% from 13 reported charges a day to 6 reported on an LSU Gameday. 
+
+
+
+```{r, echo=FALSE}
+  count(JoinedData, offense_date, Sport, crime) %>%  
+  group_by(Sport, crime) %>% 
+  summarise(AverageRate = mean(n)) %>% 
+  ggplot(mapping = aes(x = crime, y = AverageRate)) +
+  geom_col(fill = 'purple')+
+  theme(axis.text.x = element_text(angle = 90))+
+  ggtitle("Daily Crime Count by Type", "Faceted by LSU vs NonLSU Dates") +
+  xlab("Crime Type") +
+  ylab("Crime Rate")+
+  facet_wrap(~Sport)
 ```
 
 #Conclusion
-While LSU doesn’t have a major impact on the amount of crimes committed a day, with the average per day count being around 120, we do see an impact on the types of crimes that are committed. Assault crimes as well as vehicle increase by 66% of the daily average. Using inferential analysis we can estimate how the culture of a “Game Day” with more people being intoxicated and emotionally invested in their teams can affect Assaults reports, as well as with the large amounts of people being in Tiger Stadium, and nowhere near their cars, how vehicle burglaries can increase.
+Through the analysis we have found the answer to our original reasearch question is yes, that LSU events do have an impact on crime rates in the Baton Rouge area. However, not in the original way we imagined, so if we can find a way to tighten our law enforcement on the specific areas of Assault, Battery, and Vehicle Burglary, then we are on our way to making every gameday a win.

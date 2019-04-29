@@ -99,5 +99,21 @@ length(crimeVector)
 c(JoinedData$crime)->crimeVector
 count(JoinedData$crime)  
 
+ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x=Outcome)) +
+  geom_bar()+
+  ggtitle("TotalCrime by LSU Outcome")+
+  xlab("Crime Type")+
+  ylab("Total Crime")
+#don't use right now
+
+ggplot(data=subset(JoinedData, is.na(Outcome)), mapping = aes(x= offense_date, y = crime)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90))+
+  ggtitle("Crime Layout for LSU Game Days", "Colored by Game Outcome")+
+  xlab("Crime Type")+
+  ylab("Total Crime")
+
+
+
 
 CrimeTypeDF$crime->CrimeTypes

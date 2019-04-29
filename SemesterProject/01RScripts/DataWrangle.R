@@ -27,6 +27,11 @@ LSUFootball <- read_csv(here::here("Data","2018LSUFootballSchedule.csv"),
                                          LSUPoints = col_number(), OpponentPoints = col_number(), 
                                          SpecialEvent = col_logical(), StartTime = col_skip()))
 
-#mean(LSUFootball$LSUPoints)
-#meanfunction
+#full join for datasets
 full_join(BRCrime, LSUFootball, by = c("offense_date" = "Date")) -> JoinedData
+
+
+#cleaning NAs for Gameday Graphs
+JoinedData$Sport[which(is.na(JoinedData$Sport))] <- "Non Gameday"
+
+JoinedData$district[which(is.na(JoinedData$district))] <- "Unknown"
