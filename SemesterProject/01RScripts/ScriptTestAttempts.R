@@ -1,5 +1,4 @@
-#INCOMPLETE SCRIPTS
-
+#Basically serves as the bloopers for this project
 
 #average crime count per lsu date per non lsu date INCOMPLETE
 ggplot(data=subset(JoinedData, is(LSUPoints)), mapping = aes(x=crime, fill=Outcome)) +

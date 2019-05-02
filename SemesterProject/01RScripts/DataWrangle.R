@@ -16,8 +16,10 @@ OriginalData %>%
 
 AllCrime %>%
   filter(str_detect(offense_date, "2018")) %>% 
-  mutate(offense_date = lubridate::ymd(offense_date)) -> BRCrime
+  mutate(offense_date = lubridate::ymd(offense_date)) %>% 
+  filter(offense_date>= as.Date("2018-01-01") & offense_date<= as.Date("2018-12-31")) -> BRCrime
 #filtering data down to 2018 only and changing offense date into usable format
+
 
 
 #LSUFootball Upload

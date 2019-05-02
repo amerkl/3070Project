@@ -11,6 +11,18 @@ ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Oppo
   ylab("Total Crime")
 #Crime Count by Opponents in order of LSU Season(USE)
 
+count(JoinedData, offense_date, Sport, crime) %>%  
+  group_by(Sport, crime) %>% 
+  summarise(AverageRate = mean(n)) -> GameDayStats
+
+ggplot(data=subset(GameDayStats, !is.na(crime)), mapping = aes(x = reorder(crime, AverageRate), y = AverageRate, fill = Sport)) +
+  geom_col(position = "dodge")+
+  ggtitle("Daily Crime Count by Type", "Colored by Gameday") +
+  xlab("Crime Type") +
+  ylab("Crime Rate") +
+  coord_flip()
+#LSU Crime Influence
+
 count(JoinedData, offense_date, Sport) %>%  
   group_by(Sport) %>% 
   ggplot(mapping = aes(x = offense_date, y = n)) +
@@ -61,13 +73,12 @@ ggplot(JoinedData, mapping = aes(x=crime, fill=district)) +
 count(JoinedData, offense_date, Sport, crime) %>%  
   group_by(Sport, crime) %>% 
   summarise(AverageRate = mean(n)) %>% 
-  ggplot(mapping = aes(x = crime, y = AverageRate)) +
-  geom_col(fill = 'purple')+
+  ggplot(mapping = aes(x = crime, y = AverageRate, fill = Sport)) +
+  geom_col(position = "dodge")+
   theme(axis.text.x = element_text(angle = 90))+
-  ggtitle("Daily Crime Count by Type", "Faceted by LSU vs NonLSU Dates") +
+  ggtitle("Daily Crime Count by Type") +
   xlab("Crime Type") +
-  ylab("Crime Rate")+
-  facet_wrap(~Sport)
+  ylab("Crime Rate")
 
 ggplot(data=JoinedData, mapping = aes(x=district, fill = district)) +
   geom_bar()+

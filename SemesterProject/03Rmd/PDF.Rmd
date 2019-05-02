@@ -26,6 +26,7 @@ The analysis begins by looking at the amount of crimes committed per day in the 
 ```{r, echo = FALSE}
     count(JoinedData, offense_date, Sport) %>%  
       group_by(Sport) %>% 
+      filter(offense_date>= as.Date("2018-01-01") & offense_date<= as.Date("2018-12-31")) %>% 
       ggplot(mapping = aes(x = offense_date, y = n)) +
       geom_line(color = 'purple', size = 1)+ 
       ggtitle("Crimes for 2018", "Count of Crimes per Day in 2018") +
@@ -45,18 +46,6 @@ ggplot(data=subset(JoinedData, !is.na(district)), mapping = aes(x=crime, fill=di
   ylab("Total Crime")
 ```
 
-#Crime Rates by LSU Outcome
-Considering the personal investment most people have with their sports team, it's not far off to say that some of their actions may be affected based on the outcome of a game. The chart below shows how crimes numbers and types of crimes are affected based on the outcome of LSU games. As you can see, crimes actually increase based on if LSU wins, more specificially in the other and Theft categories. This shows how LSU events can influence individuals to potentially act out of their normal attitudes.
-
-```{r, echo=FALSE}
-ggplot(data=subset(JoinedData, !is.na(Outcome)), mapping = aes(x= crime, fill=Outcome)) +
-  geom_bar() +
-  theme(axis.text.x = element_text(angle = 90))+
-  ggtitle("Crime Layout for LSU Game Days", "Colored by Game Outcome")+
-  xlab("Crime Type")+
-  ylab("Total Crime")
-```
-
 #Opponent's Effect on Crime Rates
 As detailed in the graph below we see the count of crimes committed by the opponent LSU was facing at the time with a color application for the outcome of that game. What we can derive from this is opponents have little effect on the amount of crimes committed in a given day, with the exception of the peak crime date for the Louisiana Tech game, which is to be expected when you put Louisiana up against Louisiana.
 ```{r, echo = FALSE}
@@ -69,12 +58,12 @@ ggplot(data=subset(JoinedData, !is.na(LSUPoints)), mapping = aes(x= reorder(Oppo
   ylab("Total Crime")
 ```
 
-#Game Attendance on Outcome
+#Internal Variables that might affect Game Outcome
 Looking further into what causes the previous factors mentioned to influence crime in Baton Rouge, the next analysis point covers how Game Attendance affect the amount of points LSU scores thereby affecting their probability of winning. As you can see in the graph listed below, losses usually occur with larger audiences, with points scored having little effect on the outcome of the event. Relying on common sense mostly, one can estimate that chances are the losses are linked more toward level of difficulty of the opponent, which usually leads to higher turn out of fans.
 ```{r, echo=FALSE}
 ggplot(data = LSUFootball, mapping = aes(x = GameAttendance, y = LSUPoints)) +
   geom_point(size = 4, position = "jitter",color = 'purple') +
-  ggtitle("LSU Points Scored by Game Attendance", "Colored by Outcome")+
+  ggtitle("LSU Points Scored by Game Attendance", "Faceted by Outcome")+
   geom_hline(yintercept = 33, color = 'gold', size = 1)+
   geom_vline(xintercept = 90340, color = 'gold', size = 1)+
   xlab("Attendance")+
@@ -90,16 +79,16 @@ We see that while LSU events don't have an affect on the daily crime rates thems
 
 
 ```{r, echo=FALSE}
-  count(JoinedData, offense_date, Sport, crime) %>%  
+count(JoinedData, offense_date, Sport, crime) %>%  
   group_by(Sport, crime) %>% 
-  summarise(AverageRate = mean(n)) %>% 
-  ggplot(mapping = aes(x = crime, y = AverageRate)) +
-  geom_col(fill = 'purple')+
-  theme(axis.text.x = element_text(angle = 90))+
-  ggtitle("Daily Crime Count by Type", "Faceted by LSU vs NonLSU Dates") +
+  summarise(AverageRate = mean(n)) -> GameDayStats
+
+  ggplot(data=subset(GameDayStats, !is.na(crime)), mapping = aes(x = reorder(crime, AverageRate), y = AverageRate, fill = Sport)) +
+  geom_col(position = "dodge")+
+  ggtitle("Daily Crime Count by Type", "Colored by Gameday") +
   xlab("Crime Type") +
-  ylab("Crime Rate")+
-  facet_wrap(~Sport)
+  ylab("Crime Rate") +
+  coord_flip()
 ```
 
 #Conclusion

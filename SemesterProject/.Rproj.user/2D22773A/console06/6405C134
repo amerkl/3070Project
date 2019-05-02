@@ -942,4 +942,58 @@ $[0K[3G[?25h[0m[0K]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070/S
 [?25l$ g[0K[?25hi[0Kt[0K[7G[6G[?25l$ gi[0K[6G[?25h[5G[?25l$ g[0K[?25h[?25l$[0K[3G[?25h[?25l$ c[0K[?25hs[0K[6G[5G[?25l$ c[0K[?25hd[0K[6G[?25l$ cd .[0K[?25h.[0K[?25l
 [0K[?25h]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070[?25l
 [0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25he[0Km[0K[?25l$ git add SemesterProject[0K[?25h
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25he[0Km[0K[?25l$ git add SemesterProject[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rhistory.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/rmd-outputs.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/2995DC2D.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/2E369D38.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/4C4131DF.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/767E9C02.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/2D22773A/sources/prop/DC094927.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/csetup_chunk/000002.csv.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in SemesterProject/index_files/MathJax.js.download.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0K[6G[5G[?25l$ git[0K[?25h[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25h,[0K[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hF[0Ki[0Kn[0Ka[0Kl[0K[24G[?25l$ git commit -m "Final C[0K[?25h[?25l$ git commit -m "Final[0K[24G[?25h[?25l$ git commit -m "Final Y[0K[?25h[?25l$ git commit -m "Final[0K[24G[?25h[?25l$ git commit -m "Final U[0K[?25hp[0Kd[0Ka[0Kt[0Ke[0Ks[0K"[0K[?25l
+[0K[?25h[master 8ba3d1f] Final Updates[0K[?25l
+ 25 files changed, 389 insertions(+), 327 deletions(-)[0K
+ rewrite SemesterProject/.Rproj.user/2D22773A/console06/INDEX001 (86%)[0K
+ rewrite SemesterProject/.Rproj.user/shared/notebooks/5B0E6090-BRCrimeDashboard/1/s/csetup_chunk/000002.csv (66%)[0K
+ create mode 100644 SemesterProject/02Figures/CrimeByOutcome.png[0K
+ create mode 100644 SemesterProject/02Figures/CrimesByDistrict.png[0K
+ create mode 100644 SemesterProject/02Figures/DailyCrimesWithAverage.png[0K
+ create mode 100644 SemesterProject/02Figures/OpponentCrimes.png[0K
+ create mode 100644 SemesterProject/02Figures/PointScoredAffectedOutcome.png[0K
+ rewrite SemesterProject/03Rmd/HTML_files/figure-html/unnamed-chunk-5-1.png (97%)[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git push origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
+[0K[?25hEnumerating objects: 87, done.[0K[?25l
+Counting objects: 100% (87/87), done.[0K
+Delta compression using up to 4 threads.[0K
+Compressing objects:  28% (11/39)[0K[2G[?25h[?25lCompressing objects:  76% (30/39)[0K[1G[?25h[?25lCompressing objects:  82% (32/39)[0K[1G[?25h[?25lCompressing objects:  84% (33/39)[0K[1G[?25hCompressing objects: 100% (39/39), done.[0K[?25l
+Writing objects:  86% (40/46)[0K[1G[?25hWriting objects: 100% (46/46), 64.69 KiB | 2.31 MiB/s, done.[0K[?25l
+Total 46 (delta 19), reused 0 (delta 0)[0K
+[0K[?25h[?25lremote: Resolving deltas:  47% (9/19)[0K[1G[?25h[?25lremote: Resolving deltas:  68% (13/19)[0K[1G[?25h[?25lremote: Resolving deltas:  78% (15/19)[0K[1G[?25hremote: Resolving deltas: 100% (19/19), completed with 18 local objects.[0K[?25l
+[0K[?25hTo https://github.com/amerkl/3070Project.git[0K[?25l
+   f932d94..8ba3d1f  master -> master[0K
+[0K[?25h[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[0m[0K]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070/SemesterProject[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070/SemesterProject[0;36m (master)[0m[0K
+[?25l$ c[0K[?25hd[0K[6G[?25l$ cd .[0K[?25h.[0K[?25l
+[0K[?25h]0;:/c/Users/aemer/Documents/LSU/Spring 2019/ISDS 3070[?25l
+[0;32mamerkl1@DESKTOP-NQ7PQ05 [0;35m [0;33m~/Documents/LSU/Spring 2019/ISDS 3070[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git d[0K[?25hd[0K[10G[?25l$ git dd s[0K[?25h[?25l$ git dd[0K[10G[?25h[9G[?25l$ git d[0K[?25h[?25l$ git[0K[7G[?25h[6G[?25l$ gita[0K[?25h[?25l$ git[0K[?25h[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add s[0K[?25he[0Km[0Ke[0Ks[0Kt[0Ke[0Kr[0K[?25l$ git add SemesterProject[0K[?25h[?25l
+[0K[?25h
