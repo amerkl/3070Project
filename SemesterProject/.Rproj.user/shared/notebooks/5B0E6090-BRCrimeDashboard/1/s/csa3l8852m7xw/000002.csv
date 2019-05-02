@@ -1,5 +1,0 @@
-"0","OriginalData <- read.socrata(""https://data.brla.gov/resource/5rji-ddnu.json"", app_token = token)
-"
-"2","Error in read.socrata(""https://data.brla.gov/resource/5rji-ddnu.json"",  : 
-  could not find function ""read.socrata""
-"
